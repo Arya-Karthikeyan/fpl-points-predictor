@@ -1,0 +1,108 @@
+{
+  "test_season": "2025-26",
+  "n_player_gameweeks": 29338,
+  "model_rounds": 166,
+  "metrics": {
+    "lightgbm_model": {
+      "MAE": 0.9852463955673503,
+      "RMSE": 1.942661206004397,
+      "R2": 0.3384915869058368,
+      "spearman_per_gw": 0.7194758250085944,
+      "top20_overlap": 0.16973684210526313,
+      "top20_avg_actual_pts": 4.493421052631579
+    },
+    "form_last8": {
+      "MAE": 1.05936616414921,
+      "RMSE": 2.094533251792704,
+      "R2": 0.23101874125069688,
+      "spearman_per_gw": 0.6942520106847376,
+      "top20_overlap": 0.1394736842105263,
+      "top20_avg_actual_pts": 4.003947368421053
+    },
+    "form_ewm": {
+      "MAE": 1.0308512368517904,
+      "RMSE": 2.0601934014000602,
+      "R2": 0.25602692153487705,
+      "spearman_per_gw": 0.6907674842329318,
+      "top20_overlap": 0.12894736842105264,
+      "top20_avg_actual_pts": 4.09078947368421
+    },
+    "long_run_avg": {
+      "MAE": 1.1233297113045055,
+      "RMSE": 2.1039622495282027,
+      "R2": 0.2240796841650753,
+      "spearman_per_gw": 0.6340595164454944,
+      "top20_overlap": 0.13157894736842105,
+      "top20_avg_actual_pts": 3.940789473684211
+    }
+  },
+  "metrics_regulars": {
+    "lightgbm_model": {
+      "MAE": 2.260420736268722,
+      "RMSE": 3.064662707113486,
+      "R2": 0.0864659256468151,
+      "spearman_per_gw": 0.3193383437063833,
+      "top20_overlap": 0.20394736842105263,
+      "top20_avg_actual_pts": 4.500000000000001
+    },
+    "form_last8": {
+      "MAE": 2.5001730087494343,
+      "RMSE": 3.279116593512284,
+      "R2": -0.04585891216642346,
+      "spearman_per_gw": 0.18974778126407998,
+      "top20_overlap": 0.16973684210526313,
+      "top20_avg_actual_pts": 4.023684210526316
+    },
+    "form_ewm": {
+      "MAE": 2.47509082382713,
+      "RMSE": 3.254135468174918,
+      "R2": -0.02998438507589296,
+      "spearman_per_gw": 0.23706414433119427,
+      "top20_overlap": 0.1631578947368421,
+      "top20_avg_actual_pts": 4.0894736842105255
+    },
+    "long_run_avg": {
+      "MAE": 2.3624653636043145,
+      "RMSE": 3.2428406039056905,
+      "R2": -0.022846793925575426,
+      "spearman_per_gw": 0.19056141244221855,
+      "top20_overlap": 0.16447368421052633,
+      "top20_avg_actual_pts": 4.061842105263159
+    }
+  },
+  "squad_backtest": {
+    "lightgbm_model": {
+      "total": 2305.0,
+      "per_gw": 60.6578947368421
+    },
+    "form_ewm": {
+      "total": 1984.0,
+      "per_gw": 52.21052631578947
+    },
+    "form_last8": {
+      "total": 1878.0,
+      "per_gw": 49.421052631578945
+    },
+    "oracle_hindsight": {
+      "total": 5890.0,
+      "per_gw": 155.0
+    }
+  },
+  "top_features": {
+    "minutes_ewm": 0.4719,
+    "played_any_last": 0.1481,
+    "points_ewm": 0.0608,
+    "ict_index_r3": 0.0448,
+    "points_r38": 0.041,
+    "log_selected": 0.0353,
+    "value": 0.0316,
+    "minutes_r3": 0.0239,
+    "ict_index_r8": 0.0129,
+    "opp_goals_for_r6": 0.0085,
+    "days_rest": 0.0082,
+    "opp_goals_against_r6": 0.0076,
+    "opp_xg_for_r6": 0.0075,
+    "opp_xg_against_r6": 0.0069,
+    "cs_proxy": 0.0065
+  }
+}
